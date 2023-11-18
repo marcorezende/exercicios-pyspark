@@ -1,7 +1,6 @@
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
-    .appName("Exemplo de Configuração do Delta Lake") \
     .getOrCreate()
 
 
@@ -24,4 +23,3 @@ class VerificaoExercicio:
         self.checar(sample, df)
 
 
-VerificaoExercicio().exercicio(numero=1, df=df)
