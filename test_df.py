@@ -16,6 +16,6 @@ def checar(sample, df):
 
 
 def testar(numero, df):
-    path = f'/content/exercicios-pyspark/arquivos/exercicios/exercicio{numero}'
+    path = f'/content/exercicios_pyspark/arquivos/exercicios/exercicio{numero}'
     sample = spark.read.parquet(path)
     checar(sample, df)
